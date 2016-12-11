@@ -1,7 +1,7 @@
 一.版本
 组件名			版本			         备注及下载地址
 Centos		6.5 (Final)64-bit	     lsb_release -a 命令查看操作系统版本
-								     file /bin/ls 命令查看操作系统位数
+					     file /bin/ls 命令查看操作系统位数
 jdk  		version "1.7.0_67"	     http://www.360sdn.com/Linux/2014/0610/3568.html
 
 Hadoop          hadoop-2.7.2.tar.gz	     hdfs+mapreduce+yarn
@@ -15,31 +15,31 @@ HBase	        hbase-1.1.5-bin.tar.gz	     HBase 是一个开源的非关系(NoSQ
                                              http://archive.apache.org/dist/hbase/1.1.5/hbase-1.1.5-bin.tar.gz
 
 二.主机规划
-IP                    Host 	         安装软件	          进程
-172.16.101.55	sht-sgmhadoopnn-01   Hadoop、HBase	        NameNode 
+IP                    Host 	         安装软件	              进程
+172.16.101.55	sht-sgmhadoopnn-01   Hadoop、HBase	       NameNode 
                                                                 DFSZKFailoverController 
                                                                 ResourceManager 
                                                                 HMaster
                                                                 JobHistoryServer
 
-172.16.101.56	sht-sgmhadoopnn-02   Hadoop、HBase	        NameNode 
+172.16.101.56	sht-sgmhadoopnn-02   Hadoop、HBase	       NameNode 
                                                                 DFSZKFailoverController 
                                                                 ResourceManager 
                                                                 HMaster
 
-172.16.101.58	sht-sgmhadoopdn-01   hadoop、zookeeper、HBase   DataNode 
+172.16.101.58	sht-sgmhadoopdn-01   hadoop、zookeeper、HBase    DataNode 
                                                                 NodeManager 
 								JournalNode 
 								QuorumPeerMain 
 								HRegionServer
 
-172.16.101.59	sht-sgmhadoopdn-02  Hadoop、zookeeper、HBase	DataNode 
+172.16.101.59	sht-sgmhadoopdn-02  Hadoop、zookeeper、HBase     DataNode 
 								NodeManager 
 								JournalNode 
 								QuorumPeerMain 
 								HRegionServer
 
-172.16.101.60	sht-sgmhadoopdn-03  Hadoop、zookeeper、HBase	DataNode 
+172.16.101.60	sht-sgmhadoopdn-03  Hadoop、zookeeper、HBase     DataNode 
 								NodeManager 
 								JournalNode 
 								QuorumPeerMain 
