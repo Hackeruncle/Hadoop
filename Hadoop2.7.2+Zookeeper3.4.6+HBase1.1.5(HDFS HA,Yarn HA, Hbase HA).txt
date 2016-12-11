@@ -15,14 +15,14 @@ HBase	        hbase-1.1.5-bin.tar.gz	     HBase 是一个开源的非关系(NoSQ
                                              http://archive.apache.org/dist/hbase/1.1.5/hbase-1.1.5-bin.tar.gz
 
 二.主机规划
-IP                    Host 	            安装软件	               进程
-172.16.101.55	sht-sgmhadoopnn-01   Hadoop、HBase	            NameNode 
+IP                    Host 	         安装软件	          进程
+172.16.101.55	sht-sgmhadoopnn-01   Hadoop、HBase	        NameNode 
                                                                 DFSZKFailoverController 
                                                                 ResourceManager 
                                                                 HMaster
                                                                 JobHistoryServer
 
-172.16.101.56	sht-sgmhadoopnn-02   Hadoop、HBase	            NameNode 
+172.16.101.56	sht-sgmhadoopnn-02   Hadoop、HBase	        NameNode 
                                                                 DFSZKFailoverController 
                                                                 ResourceManager 
                                                                 HMaster
@@ -54,7 +54,7 @@ Data 	          $HADOOP_HOME/data
 Log 	          $HADOOP_HOME/logs 	
 hadoop.tmp.dir	  /home/hadoop/tmp	    需要手工创建,权限777,root:root
 $ZOOKEEPER_HOME   /hadoop/zookeeper	
-$HBASE_HOME	      /hadoop/hbase	
+$HBASE_HOME	  /hadoop/hbase	
 hbase.tmp.dir	  /hadoop/hbase/tmp	    需要手工创建,权限777,root:root
 
 
