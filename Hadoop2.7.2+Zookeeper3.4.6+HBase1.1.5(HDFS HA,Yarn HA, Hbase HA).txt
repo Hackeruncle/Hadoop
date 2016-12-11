@@ -4,15 +4,15 @@ Centos		6.5 (Final)64-bit	     lsb_release -a 命令查看操作系统版本
 								     file /bin/ls 命令查看操作系统位数
 jdk  		version "1.7.0_67"	     http://www.360sdn.com/Linux/2014/0610/3568.html
 
-Hadoop      hadoop-2.7.2.tar.gz	     hdfs+mapreduce+yarn
-                                     hadoop-2.7.2.tar.gz(重新编译支持snappy的hadoop-2.7.2-snappy.tar.gz)
-                                     参考” 01.重新编译Hadoop 2.7.2源代码,使其支持snappy.txt”
+Hadoop          hadoop-2.7.2.tar.gz	     hdfs+mapreduce+yarn
+                                             hadoop-2.7.2.tar.gz(重新编译支持snappy的hadoop-2.7.2-snappy.tar.gz)
+                                             参考” 01.重新编译Hadoop 2.7.2源代码,使其支持snappy.txt”
 
-Zookeeper	zookeeper-3.4.6.tar.gz	 热切,Yarn 存储数据使用的协调服务 
-                                     https://www.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
+Zookeeper	zookeeper-3.4.6.tar.gz	     热切,Yarn 存储数据使用的协调服务 
+                                             https://www.apache.org/dist/zookeeper/zookeeper-3.4.6/zookeeper-3.4.6.tar.gz
 
-HBase	    hbase-1.1.5-bin.tar.gz	 HBase 是一个开源的非关系(NoSQL)的可伸缩性分布式数据库。它是面向列的，并适合于存储超大型松散数据。HBase适合于实时，随机对Big数据进行读写操作的业务环境。
-									 http://archive.apache.org/dist/hbase/1.1.5/hbase-1.1.5-bin.tar.gz
+HBase	        hbase-1.1.5-bin.tar.gz	     HBase 是一个开源的非关系(NoSQL)的可伸缩性分布式数据库。它是面向列的，并适合于存储超大型松散数据。HBase适合于实时，随机对Big数据进行读写操作的业务环境。
+                                             http://archive.apache.org/dist/hbase/1.1.5/hbase-1.1.5-bin.tar.gz
 
 二.主机规划
 IP                    Host 	            安装软件	               进程
@@ -29,21 +29,21 @@ IP                    Host 	            安装软件	               进程
 
 172.16.101.58	sht-sgmhadoopdn-01   hadoop、zookeeper、HBase   DataNode 
                                                                 NodeManager 
-																JournalNode 
-																QuorumPeerMain 
-																HRegionServer
+								JournalNode 
+								QuorumPeerMain 
+								HRegionServer
 
 172.16.101.59	sht-sgmhadoopdn-02  Hadoop、zookeeper、HBase	DataNode 
-																NodeManager 
-																JournalNode 
-																QuorumPeerMain 
-																HRegionServer
+								NodeManager 
+								JournalNode 
+								QuorumPeerMain 
+								HRegionServer
 
 172.16.101.60	sht-sgmhadoopdn-03  Hadoop、zookeeper、HBase	DataNode 
-																NodeManager 
-																JournalNode 
-																QuorumPeerMain 
-																HRegionServer
+								NodeManager 
+								JournalNode 
+								QuorumPeerMain 
+								HRegionServer
 #当前系统配置NameNode,ResourceManager,HMaster 进程的 HA
 
 
